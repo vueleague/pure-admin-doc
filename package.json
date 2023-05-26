@@ -3,24 +3,29 @@
   "version": "3.9.7",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "preview": "esno preview"
   },
   "license": "MIT",
   "devDependencies": {
-    "@better-scroll/core": "^2.4.2",
-    "@better-scroll/slide": "^2.4.2",
-    "@vuepress/plugin-active-header-links": "^1.9.7",
-    "@vuepress/plugin-nprogress": "^1.9.7",
-    "@vuepress/plugin-search": "^1.9.7",
+    "@better-scroll/core": "^2.5.1",
+    "@better-scroll/slide": "^2.5.1",
+    "@vuepress/plugin-active-header-links": "^1.9.9",
+    "@vuepress/plugin-nprogress": "^1.9.9",
+    "@vuepress/plugin-search": "^1.9.9",
+    "whatwg-fetch": "^3.6.2",
     "chalk": "^5.0.0",
     "dayjs": "^1.10.7",
     "docsearch.js": "^2.6.3",
-    "element-ui": "^2.15.6",
+    "element-ui": "^2.15.13",
+    "esno": "^0.16.3",
+    "express": "^4.18.2",
     "good-storage": "^1.1.1",
     "inquirer": "7.1.0",
     "js-yaml": "^4.1.0",
     "json2yaml": "1.1.0",
     "lodash": "^4.17.21",
+    "open": "^9.1.0",
     "stylus": "^0.57.0",
     "stylus-loader": "3.0.2",
     "vuepress": "^1.9.9",
@@ -38,5 +43,12 @@
     "babel-plugin-component": "^1.1.1",
     "core-js": "2.6.11",
     "remixicon": "^2.5.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "vue"
+      ]
+    }
   }
 }
